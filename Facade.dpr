@@ -96,9 +96,10 @@ begin
 
     facad := TComputer.Create;
     facad.Start_Computer;
-
-    ReadLn;
+    
     WriteLn(#13#10 + 'Press any key to continue...');
+    ReadLn;
+
     facad.Free;
   except
     on E: Exception do
